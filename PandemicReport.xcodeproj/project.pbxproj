@@ -12,6 +12,7 @@
 		185CB1FE23C78CE6009F7571 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185CB1FD23C78CE6009F7571 /* SceneDelegate.swift */; };
 		185CB20323C78CE6009F7571 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB20123C78CE6009F7571 /* Main.storyboard */; };
 		185CB20523C78CE8009F7571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185CB20423C78CE8009F7571 /* Assets.xcassets */; };
+		5E06A6CB2743C55600440A4A /* TestCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06A6CA2743C55600440A4A /* TestCoreDataStack.swift */; };
 		BF94E867249DF65C007DEC82 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF94E866249DF65C007DEC82 /* CoreDataStack.swift */; };
 		BF94E869249DF6C2007DEC82 /* ReportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF94E868249DF6C2007DEC82 /* ReportService.swift */; };
 		BF94E86C249DF860007DEC82 /* PandemicReport.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF94E86A249DF860007DEC82 /* PandemicReport.xcdatamodeld */; };
@@ -39,6 +40,7 @@
 		185CB20223C78CE6009F7571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		185CB20423C78CE8009F7571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		185CB20923C78CE8009F7571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E06A6CA2743C55600440A4A /* TestCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoreDataStack.swift; sourceTree = "<group>"; };
 		BF94E866249DF65C007DEC82 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		BF94E868249DF6C2007DEC82 /* ReportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportService.swift; sourceTree = "<group>"; };
 		BF94E86B249DF860007DEC82 /* PandemicReport.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PandemicReport.xcdatamodel; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				BF94E88024A08161007DEC82 /* Info.plist */,
+				5E06A6CA2743C55600440A4A /* TestCoreDataStack.swift */,
 			);
 			path = PandemicReportTests;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 					};
 					BF94E87B24A08161007DEC82 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1310;
 						TestTargetID = 185CB1F723C78CE6009F7571;
 					};
 				};
@@ -290,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E06A6CB2743C55600440A4A /* TestCoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +476,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PandemicReportTests/Info.plist;
@@ -482,6 +488,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.PandemicReportTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PandemicReport.app/PandemicReport";
@@ -492,6 +499,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PandemicReportTests/Info.plist;
