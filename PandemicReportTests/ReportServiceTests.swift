@@ -45,5 +45,11 @@ class ReportServiceTests: XCTestCase {
     reportService = ReportService(managedObjectContext: coreDataStack.mainContext,
                                   coreDataStack: coreDataStack)
   }
+  
+  override func tearDown() {
+    super.tearDown()
+    reportService = nil
+    coreDataStack = nil
+  }
 
 }
