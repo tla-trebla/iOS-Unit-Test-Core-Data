@@ -51,5 +51,13 @@ class ReportServiceTests: XCTestCase {
     reportService = nil
     coreDataStack = nil
   }
+  
+  func testAddReport() {
+    // 1
+    let report = reportService.add("Death Star",
+                                   numberTested: 1000,
+                                   numberPositive: 999,
+                                   numberNegative: 1)
+  }
 
 }
