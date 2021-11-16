@@ -105,10 +105,14 @@ extension ViewController: UITableViewDataSource {
   }
 
   func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-    guard editingStyle == .delete else {
+    guard let report = reports?[indexPath.row],
+            editingStyle == .delete else {
       return
     }
     reports?.remove(at: indexPath.row)
+    
+    // 1
+    reportService.delete(report)
 
     tableView.deleteRows(at: [indexPath], with: .automatic)
   }
