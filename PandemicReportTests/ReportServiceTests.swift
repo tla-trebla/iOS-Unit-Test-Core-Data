@@ -160,5 +160,8 @@ class ReportServiceTests: XCTestCase {
     
     // 4
     fetchReports = reportService.getReports()
+    
+    // 5
+    XCTAssertTrue(fetchReports?.isEmpty ?? false)
   }
 }
