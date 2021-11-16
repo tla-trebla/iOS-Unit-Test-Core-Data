@@ -123,6 +123,12 @@ class ReportServiceTests: XCTestCase {
                                       numberTested: 0,
                                       numberPositive: 0,
                                       numberNegative: 0)
+    
+    // 2
+    newReport.numberTested = 30
+    newReport.numberPositive = 10
+    newReport.numberNegative = 20
+    newReport.location = "Hoth"
   }
 
 }
