@@ -81,5 +81,7 @@ extension ReportService {
   public func delete(_ report: PandemicReport) {
     // 1
     managedObjectContext.delete(report)
+    // 2
+    coreDataStack.saveContext(managedObjectContext)
   }
 }
