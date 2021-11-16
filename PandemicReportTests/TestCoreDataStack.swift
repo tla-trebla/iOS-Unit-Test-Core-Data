@@ -46,6 +46,15 @@ class TestCoreDataStack: XCTestCase {
     // 2
     let container = NSPersistentContainer(name: CoreDataStack.modelName,
                                           managedObjectModel: CoreDataStack.model)
+    
+    // 3
+    container.persistentStoreDescriptions = [persistentDescription]
+    
+    container.loadPersistentStores { _, error in
+      if let error = error as NSError? {
+        fatalError("Unresolved error \(error), \(error.userInfo)")
+      }
+    }
   }
 
     override func setUpWithError() throws {
