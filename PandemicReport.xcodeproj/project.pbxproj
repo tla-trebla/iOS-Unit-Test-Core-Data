@@ -13,6 +13,7 @@
 		185CB20323C78CE6009F7571 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB20123C78CE6009F7571 /* Main.storyboard */; };
 		185CB20523C78CE8009F7571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185CB20423C78CE8009F7571 /* Assets.xcassets */; };
 		5E06A6CB2743C55600440A4A /* TestCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06A6CA2743C55600440A4A /* TestCoreDataStack.swift */; };
+		5E5496282743E30800E0CC56 /* ReportServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5496272743E30800E0CC56 /* ReportServiceTests.swift */; };
 		BF94E867249DF65C007DEC82 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF94E866249DF65C007DEC82 /* CoreDataStack.swift */; };
 		BF94E869249DF6C2007DEC82 /* ReportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF94E868249DF6C2007DEC82 /* ReportService.swift */; };
 		BF94E86C249DF860007DEC82 /* PandemicReport.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF94E86A249DF860007DEC82 /* PandemicReport.xcdatamodeld */; };
@@ -41,6 +42,7 @@
 		185CB20423C78CE8009F7571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		185CB20923C78CE8009F7571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E06A6CA2743C55600440A4A /* TestCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoreDataStack.swift; sourceTree = "<group>"; };
+		5E5496272743E30800E0CC56 /* ReportServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportServiceTests.swift; sourceTree = "<group>"; };
 		BF94E866249DF65C007DEC82 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		BF94E868249DF6C2007DEC82 /* ReportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportService.swift; sourceTree = "<group>"; };
 		BF94E86B249DF860007DEC82 /* PandemicReport.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PandemicReport.xcdatamodel; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			children = (
 				BF94E88024A08161007DEC82 /* Info.plist */,
 				5E06A6CA2743C55600440A4A /* TestCoreDataStack.swift */,
+				5E5496272743E30800E0CC56 /* ReportServiceTests.swift */,
 			);
 			path = PandemicReportTests;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E06A6CB2743C55600440A4A /* TestCoreDataStack.swift in Sources */,
+				5E5496282743E30800E0CC56 /* ReportServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
