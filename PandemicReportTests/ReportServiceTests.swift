@@ -38,5 +38,12 @@ class ReportServiceTests: XCTestCase {
   
   var reportService: ReportService!
   var coreDataStack: CoreDataStack!
+  
+  override func setUp() {
+    super.setUp()
+    coreDataStack = TestCoreDataStack()
+    reportService = ReportService(managedObjectContext: coreDataStack.mainContext,
+                                  coreDataStack: coreDataStack)
+  }
 
 }
