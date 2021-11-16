@@ -154,5 +154,8 @@ class ReportServiceTests: XCTestCase {
     var fetchReports = reportService.getReports()
     XCTAssertTrue(fetchReports?.count == 1)
     XCTAssertTrue(newReport.id == fetchReports?.first?.id)
+    
+    // 3
+    reportService.delete(newReport)
   }
 }
