@@ -112,6 +112,9 @@ class ReportServiceTests: XCTestCase {
     
     // 4
     XCTAssertEqual(getReports?.isEmpty, true)
+    
+    // 5
+    XCTAssertTrue(newReport.id != getReports?.first?.id)
   }
 
 }
