@@ -58,6 +58,15 @@ class ReportServiceTests: XCTestCase {
                                    numberTested: 1000,
                                    numberPositive: 999,
                                    numberNegative: 1)
+    
+    // 2
+    XCTAssertNotNil(report, "Report should not be nil")
+    XCTAssertTrue(report.location == "Death Star")
+    XCTAssertTrue(report.numberTested == 1000)
+    XCTAssertTrue(report.numberPositive == 999)
+    XCTAssertTrue(report.numberNegative == 1)
+    XCTAssertNotNil(report.id, "id should not be nil")
+    XCTAssertNotNil(report.dateReported, "dateReported should not be nil")
   }
 
 }
