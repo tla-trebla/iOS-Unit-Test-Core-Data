@@ -80,6 +80,16 @@ class ReportServiceTests: XCTestCase {
                 object: coreDataStack.mainContext) { _ in
       return true
     }
+    
+    // 3
+    derivedContext.perform {
+      let report = self.reportService.add("Death Star 2",
+                                          numberTested: 600,
+                                          numberPositive: 599,
+                                          numberNegative: 1)
+      
+      XCTAssertNotNil(report)
+    }
   }
 
 }
