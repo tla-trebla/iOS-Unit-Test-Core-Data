@@ -103,6 +103,9 @@ class ReportServiceTests: XCTestCase {
                                       numberTested: 30,
                                       numberPositive: 20,
                                       numberNegative: 10)
+    
+    // 2
+    let getReports = reportService.getReports()
   }
 
 }
