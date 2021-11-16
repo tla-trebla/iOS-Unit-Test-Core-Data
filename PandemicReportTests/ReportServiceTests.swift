@@ -135,6 +135,12 @@ class ReportServiceTests: XCTestCase {
     
     // 4
     XCTAssertFalse(newReport.id == updateReport.id)
+    
+    // 5
+    XCTAssertFalse(updateReport.numberTested == 30)
+    XCTAssertFalse(updateReport.numberPositive == 10)
+    XCTAssertFalse(updateReport.numberNegative == 20)
+    XCTAssertFalse(updateReport.location == "Hoth")
   }
 
 }
