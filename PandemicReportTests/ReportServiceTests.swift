@@ -90,6 +90,11 @@ class ReportServiceTests: XCTestCase {
       
       XCTAssertNotNil(report)
     }
+    
+    // 4
+    waitForExpectations(timeout: 2.0) { error in
+      XCTAssertNil(error, "Save did not occur")
+    }
   }
 
 }
