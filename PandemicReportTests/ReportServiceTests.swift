@@ -149,5 +149,10 @@ class ReportServiceTests: XCTestCase {
                                       numberTested: 100,
                                       numberPositive: 80,
                                       numberNegative: 20)
+    
+    // 2
+    var fetchReports = reportService.getReports()
+    XCTAssertTrue(fetchReports?.count == 1)
+    XCTAssertTrue(newReport.id == fetchReports?.first?.id)
   }
 }
