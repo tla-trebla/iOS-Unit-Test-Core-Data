@@ -157,5 +157,8 @@ class ReportServiceTests: XCTestCase {
     
     // 3
     reportService.delete(newReport)
+    
+    // 4
+    fetchReports = reportService.getReports()
   }
 }
