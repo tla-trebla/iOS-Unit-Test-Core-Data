@@ -74,6 +74,12 @@ class ReportServiceTests: XCTestCase {
     let derivedContext = coreDataStack.newDerivedContext()
     reportService = ReportService(managedObjectContext: derivedContext,
                                   coreDataStack: coreDataStack)
+    
+    // 2
+    expectation(forNotification: .NSManagedObjectContextDidSave,
+                object: coreDataStack.mainContext) { _ in
+      return true
+    }
   }
 
 }
