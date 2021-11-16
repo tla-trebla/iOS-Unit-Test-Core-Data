@@ -31,6 +31,8 @@
 /// THE SOFTWARE.
 
 import XCTest
+@testable import PandemicReport
+import CoreData
 
 class ReportServiceTests: XCTestCase {
 
