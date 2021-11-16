@@ -109,6 +109,9 @@ class ReportServiceTests: XCTestCase {
     
     // 3
     XCTAssertNil(getReports)
+    
+    // 4
+    XCTAssertEqual(getReports?.isEmpty, true)
   }
 
 }
