@@ -106,6 +106,9 @@ class ReportServiceTests: XCTestCase {
     
     // 2
     let getReports = reportService.getReports()
+    
+    // 3
+    XCTAssertNil(getReports)
   }
 
 }
