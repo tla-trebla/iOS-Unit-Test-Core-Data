@@ -68,5 +68,12 @@ class ReportServiceTests: XCTestCase {
     XCTAssertNotNil(report.id, "id should not be nil")
     XCTAssertNotNil(report.dateReported, "dateReported should not be nil")
   }
+  
+  func testRootContextIsSavedAfterAddingReport() {
+    // 1
+    let derivedContext = coreDataStack.newDerivedContext()
+    reportService = ReportService(managedObjectContext: derivedContext,
+                                  coreDataStack: coreDataStack)
+  }
 
 }
