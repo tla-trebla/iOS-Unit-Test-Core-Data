@@ -134,13 +134,20 @@ class ReportServiceTests: XCTestCase {
     let updateReport = reportService.update(newReport)
     
     // 4
-    XCTAssertFalse(newReport.id == updateReport.id)
+    XCTAssertTrue(newReport.id == updateReport.id)
     
     // 5
-    XCTAssertFalse(updateReport.numberTested == 30)
-    XCTAssertFalse(updateReport.numberPositive == 10)
-    XCTAssertFalse(updateReport.numberNegative == 20)
-    XCTAssertFalse(updateReport.location == "Hoth")
+    XCTAssertTrue(updateReport.numberTested == 30)
+    XCTAssertTrue(updateReport.numberPositive == 10)
+    XCTAssertTrue(updateReport.numberNegative == 20)
+    XCTAssertTrue(updateReport.location == "Hoth")
   }
 
+  func testDeleteReport() {
+    // 1
+    let newReport = reportService.add("Starkiller base",
+                                      numberTested: 100,
+                                      numberPositive: 80,
+                                      numberNegative: 20)
+  }
 }
