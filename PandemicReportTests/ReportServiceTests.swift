@@ -108,13 +108,13 @@ class ReportServiceTests: XCTestCase {
     let getReports = reportService.getReports()
     
     // 3
-    XCTAssertNil(getReports)
+    XCTAssertNotNil(getReports)
     
     // 4
-    XCTAssertEqual(getReports?.isEmpty, true)
+    XCTAssertTrue(getReports?.count == 1)
     
     // 5
-    XCTAssertTrue(newReport.id != getReports?.first?.id)
+    XCTAssertTrue(newReport.id == getReports?.first?.id)
   }
 
 }
