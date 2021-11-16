@@ -79,6 +79,7 @@ extension ReportService {
   }
   
   public func delete(_ report: PandemicReport) {
-    // TODO: Delete record from CoreData
+    // 1
+    managedObjectContext.delete(report)
   }
 }
