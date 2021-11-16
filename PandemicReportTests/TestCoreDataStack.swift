@@ -39,6 +39,9 @@ class TestCoreDataStack: XCTestCase {
   override init() {
     super.init()
     
+    // 1
+    let persistentDescription = NSPersistentStoreDescription()
+    persistentDescription.type = NSInMemoryStoreType
     
   }
 
