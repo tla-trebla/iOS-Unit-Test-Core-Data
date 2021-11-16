@@ -43,6 +43,9 @@ class TestCoreDataStack: XCTestCase {
     let persistentDescription = NSPersistentStoreDescription()
     persistentDescription.type = NSInMemoryStoreType
     
+    // 2
+    let container = NSPersistentContainer(name: CoreDataStack.modelName,
+                                          managedObjectModel: CoreDataStack.model)
   }
 
     override func setUpWithError() throws {
