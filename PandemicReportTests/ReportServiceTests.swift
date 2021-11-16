@@ -129,6 +129,9 @@ class ReportServiceTests: XCTestCase {
     newReport.numberPositive = 10
     newReport.numberNegative = 20
     newReport.location = "Hoth"
+    
+    // 3
+    let updateReport = reportService.update(newReport)
   }
 
 }
