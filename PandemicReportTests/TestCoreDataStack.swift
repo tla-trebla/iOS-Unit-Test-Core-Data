@@ -35,6 +35,12 @@ import CoreData
 import PandemicReport
 
 class TestCoreDataStack: XCTestCase {
+  
+  override init() {
+    super.init()
+    
+    
+  }
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
