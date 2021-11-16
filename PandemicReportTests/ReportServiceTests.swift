@@ -116,5 +116,13 @@ class ReportServiceTests: XCTestCase {
     // 5
     XCTAssertTrue(newReport.id == getReports?.first?.id)
   }
+  
+  func testUpdateReport() {
+    // 1
+    let newReport = reportService.add("Snow Planet",
+                                      numberTested: 0,
+                                      numberPositive: 0,
+                                      numberNegative: 0)
+  }
 
 }
