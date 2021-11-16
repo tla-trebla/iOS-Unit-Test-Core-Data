@@ -132,6 +132,9 @@ class ReportServiceTests: XCTestCase {
     
     // 3
     let updateReport = reportService.update(newReport)
+    
+    // 4
+    XCTAssertFalse(newReport.id == updateReport.id)
   }
 
 }
