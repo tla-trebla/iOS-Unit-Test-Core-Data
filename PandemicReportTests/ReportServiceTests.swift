@@ -96,5 +96,13 @@ class ReportServiceTests: XCTestCase {
       XCTAssertNil(error, "Save did not occur")
     }
   }
+  
+  func testGetReports() {
+    // 1
+    let newReport = reportService.add("Endor",
+                                      numberTested: 30,
+                                      numberPositive: 20,
+                                      numberNegative: 10)
+  }
 
 }
